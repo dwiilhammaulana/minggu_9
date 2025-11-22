@@ -7,27 +7,35 @@ class Pages1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
             appBar: AppBar(
-              title: const Text("Dashboard"),
+              title: Center(child: const Text("Dashboard")),
               actions: const [],
             ),
             body: SingleChildScrollView(
               child: Container(
                 padding: const EdgeInsets.all(20.0),
-                child: Column(
-                  children: [
-                    Card(
-                      color: Colors.red,
-                      child: Text("Card with color", style: TextStyle(fontSize: 16)),
-                    ),
-                    SizedBox(height: 10),
-                    Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12),
+                child: Center(
+                  child: Column(
+                    children: [
+                      Card(
                         color: Colors.red,
+                        child: Text("Card with color", style: TextStyle(fontSize: 16)),
                       ),
-                      child: Text("Container with color", style: TextStyle(fontSize: 16)),
-                    ),
-                  ],
+                      SizedBox(height: 10),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
+                          color: Colors.red,
+                        ),
+                        child: Text("Container with color", style: TextStyle(fontSize: 16)),
+                      ),
+                      SizedBox(height: 10),
+                      Card(
+                        elevation: 10,
+                        color: Colors.red,
+                        child: Text("tinggi bayangan shadaw", style: TextStyle(fontSize: 16)),
+                      )
+                    ],
+                  ),
                 ),
               ),
             ),
