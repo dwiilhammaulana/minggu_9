@@ -13,12 +13,20 @@ class Pages1 extends StatelessWidget {
             body: SingleChildScrollView(
               child: Container(
                 padding: const EdgeInsets.all(20.0),
-                child: const Column(
+                child: Column(
                   children: [
                     Card(
                       color: Colors.red,
-                      child: Text("Card with colorrrrrrrrrrrrrrrr", style: TextStyle(fontSize: 16)),
-                    )
+                      child: Text("Card with color", style: TextStyle(fontSize: 16)),
+                    ),
+                    SizedBox(height: 10),
+                    Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),
+                        color: Colors.red,
+                      ),
+                      child: Text("Container with color", style: TextStyle(fontSize: 16)),
+                    ),
                   ],
                 ),
               ),
