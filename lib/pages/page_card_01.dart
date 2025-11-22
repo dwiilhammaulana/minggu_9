@@ -14,7 +14,12 @@ class Pages1 extends StatelessWidget {
               child: Container(
                 padding: const EdgeInsets.all(20.0),
                 child: const Column(
-                  children: [],
+                  children: [
+                    Card(
+                      color: Colors.red,
+                      child: Text("Card with colorrrrrrrrrrrrrrrr", style: TextStyle(fontSize: 16)),
+                    )
+                  ],
                 ),
               ),
             ),
