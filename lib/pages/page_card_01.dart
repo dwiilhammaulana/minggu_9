@@ -6,39 +6,66 @@ class Pages1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-            appBar: AppBar(
-              title: Center(child: const Text("Dashboard")),
-              actions: const [],
-            ),
-            body: SingleChildScrollView(
-              child: Container(
-                padding: const EdgeInsets.all(20.0),
-                child: Center(
-                  child: Column(
-                    children: [
-                      Card(
-                        color: Colors.red,
-                        child: Text("Card with color", style: TextStyle(fontSize: 16)),
-                      ),
-                      SizedBox(height: 10),
-                      Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(12),
-                          color: Colors.red,
-                        ),
-                        child: Text("Container with color", style: TextStyle(fontSize: 16)),
-                      ),
-                      SizedBox(height: 10),
-                      Card(
-                        elevation: 10,
-                        color: Colors.red,
-                        child: Text("tinggi bayangan shadaw", style: TextStyle(fontSize: 16)),
-                      )
-                    ],
+      appBar: AppBar(
+        title: Center(child: const Text("Dashboard")),
+        actions: const [],
+      ),
+      body: SingleChildScrollView(
+        child: Container(
+          padding: const EdgeInsets.all(20.0),
+          child: Center(
+            child: Column(
+              children: [
+                Card(
+                  color: Colors.red,
+                  child: Text(
+                    "Card with color",
+                    style: TextStyle(fontSize: 16),
                   ),
                 ),
-              ),
+                SizedBox(height: 10),
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: Colors.red,
+                  ),
+                  child: Text(
+                    "Container with color",
+                    style: TextStyle(fontSize: 16),
+                  ),
+                ),
+                SizedBox(height: 10),
+                Card(
+                  elevation: 10,
+                  color: Colors.red,
+                  child: Text(
+                    "tinggi bayangan shadaw",
+                    style: TextStyle(fontSize: 16),
+                  ),
+                ),
+                SizedBox(height: 10),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.yellow,
+                    borderRadius: BorderRadius.circular(16),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black26,
+                        blurRadius: 10,
+                        offset: Offset(0, 4),
+                      ),
+                    ],
+                  ),
+                  child: Text(
+                    "Tinggi bayangan Shadow",
+                    style: TextStyle(fontSize: 16.0),
+                  ),
+                ),
+              ],
             ),
-          );
+          ),
+        ),
+      ),
+    );
   }
 }
