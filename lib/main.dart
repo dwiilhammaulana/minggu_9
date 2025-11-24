@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:minggu_9/pages/mastercard.dart';
 import 'package:minggu_9/pages/page_card_01.dart';
 
 void main() {
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const Pages1(),
+      home: const MastercardPage(),
     );
   }
 }
