@@ -97,6 +97,14 @@ class Pages1 extends StatelessWidget {
                   
                   ),
                 ),
+                SizedBox(height: 10),
+                Card(
+                  shadowColor: Colors.red,
+                  child: Padding(padding: const EdgeInsets.all(8),
+                  child: Text("shadow color red",style: TextStyle(fontSize: 14),
+                  ),
+                  ),
+                )
               ],
             ),
           ),
