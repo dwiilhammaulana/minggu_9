@@ -88,6 +88,15 @@ class Pages1 extends StatelessWidget {
                   clipBehavior: Clip.antiAlias,
                   child: Text("BOrder tidak menimpa conten", style: TextStyle(fontSize: 14.0)),
                 ),
+                SizedBox(height: 10),
+                Card(
+                  semanticContainer: true,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8),
+                    child: Text("semantik true",style: TextStyle(fontSize: 14),),
+                  
+                  ),
+                ),
               ],
             ),
           ),
