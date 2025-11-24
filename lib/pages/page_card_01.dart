@@ -71,11 +71,22 @@ class Pages1 extends StatelessWidget {
                     child: Text(
                       "Shape Bingkai persegi panjang",
                       style: TextStyle(fontSize: 12.0),
-                    ),
-
-
-                    // baru sampai shape
+                    ),           // baru sampai shape
                   ),
+                ),
+                SizedBox(height: 10),
+                Card(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                    side: BorderSide(color: Colors.red, width: 2),
+                  ),
+                  borderOnForeground: true,
+                  child: Text("BOrder tidak menimpa conten", style: TextStyle(fontSize: 10.0)),
+                ),
+                SizedBox(height: 10),
+                Card(
+                  clipBehavior: Clip.antiAlias,
+                  child: Text("BOrder tidak menimpa conten", style: TextStyle(fontSize: 14.0)),
                 ),
               ],
             ),
